@@ -6,16 +6,21 @@
   align-content: space-between;
   position: fixed;
   top: 40%;
-  left: 30%;
+  left: 20%;
   margin-top: -50px;
   margin-left: -50px;
-  
+  z-index: 1;
   
 }
 .title-container h1{
   font-size: 72px;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.15em;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 .name-container{
   border: 2px solid black;
@@ -42,4 +47,12 @@
   100% {
     width: 18ch;
   }
+}
+
+.title-image-container{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
 }

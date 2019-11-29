@@ -5,7 +5,11 @@ class ImageBox extends Component {
     console.log(this.props.imageUrl);
     return (
       <div className="image-box-container">
-        <img alt="not found" src={this.props.image}></img>
+        <img
+          className="image-properties"
+          alt="not found"
+          src={this.props.image}
+        ></img>
       </div>
     );
   }

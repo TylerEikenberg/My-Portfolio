@@ -18,7 +18,9 @@ class App extends Component {
             <h3>Software Engineer</h3>
           </div>
         </div>
-        <ImageBox image={placeholder} />
+        <div className="title-image-container">
+          <ImageBox image={placeholder} />
+        </div>
       </div>
     );
   }
