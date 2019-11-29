@@ -1,22 +1,45 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-container {
+  position: relative;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: space-between;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  margin-top: -50px;
+  margin-left: -50px;
+  
+  
+}
+.title-container h1{
+  font-size: 72px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.15em;
+}
+.name-container{
+  border: 2px solid black;
 }
 
-.App-link {
-  color: #09d3ac;
+.subname-container{
+  top: 50%;
+  /* border: 2px solid black; */
+  position: absolute;
+}
+.title-container h3{
+  font-size: 26px;
+  font-family: monospace;
+  animation: type 2.5s steps(20);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid black;
+  width: 18ch;
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 18ch;
+  }
 }
