@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
-
+import ImageBox from "./Components/ImageBox/ImageBox";
+import placeholder from "./Assets/placeholder.jpg";
 AOS.init();
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
             <h3>Software Engineer</h3>
           </div>
         </div>
+        <ImageBox image={placeholder} />
       </div>
     );
   }
