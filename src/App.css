@@ -1,33 +1,30 @@
 .title-container {
   position: relative;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   align-content: space-between;
   position: fixed;
-  top: 40%;
-  left: 20%;
+  top: 5%;
+  left: 10%;
   margin-top: -50px;
   margin-left: -50px;
   z-index: 1;
+  width: 50px;
   
 }
 .title-container h1{
-  font-size: 72px;
-  font-family: 'Bebas Neue', cursive;
-  letter-spacing: 0.15em;
-  text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+  font-size: 102px;
+  font-family: 'Righteous', cursive;
+  color: black;
+  letter-spacing: 0.1em;
 }
 .name-container{
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .subname-container{
-  top: 50%;
+  top: 75%;
   /* border: 2px solid black; */
   position: absolute;
 }

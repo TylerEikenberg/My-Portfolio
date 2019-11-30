@@ -12,7 +12,7 @@ class App extends Component {
       <div>
         <div className="title-container">
           <div className="name-container">
-            <h1>Tyler Eikenberg</h1>
+            <h1>tyler eikenberg</h1>
           </div>
           <div className="subname-container">
             <h3>Software Engineer</h3>
