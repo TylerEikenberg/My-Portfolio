@@ -40,6 +40,14 @@
   font-family: 'Righteous', cursive;
   color: #E9F2F1;
   letter-spacing: 0.1em;
+  cursor: pointer;
+    
+}
+.title-container h1:hover{
+  font-size: 102px;
+  font-family: 'Righteous', cursive;
+  color: rgba(233, 242, 241, 0.92);
+  letter-spacing: 0.1em;
     
 }
 @keyframes fadein {
@@ -57,6 +65,7 @@
   width: 144px;
 }
 svg{
+  cursor: pointer;
   fill: #E9F2F1;
   width:48px;
   height:48px; 
