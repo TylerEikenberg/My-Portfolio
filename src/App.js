@@ -4,11 +4,9 @@ import "aos/dist/aos.css";
 import "./App.css";
 import ImageBox from "./Components/ImageBox/ImageBox";
 import placeholder from "./Assets/placeholder.jpg";
+import placeholder2 from "./Assets/placeholder2.jpg";
 import TextBox from "./Components/TextBox/TextBox";
 AOS.init();
-
-const topBio =
-  "Hi! My name is Tyler Eikenberg and I'm a full-stack web developer and software engineer.";
 
 class App extends Component {
   render() {
@@ -35,7 +33,18 @@ class App extends Component {
           <ImageBox image={placeholder} />
         </div>
         <div className="top-bio">
-          <TextBox textContent={topBio} />
+          <TextBox intro="true" />
+          <div
+            className="middle-images"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+          >
+            <TextBox about="true" />
+            <ImageBox image={placeholder2} type="middle" />
+          </div>
         </div>
       </div>
     );

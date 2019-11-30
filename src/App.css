@@ -3,6 +3,17 @@
   margin-right: 10%;
   box-sizing: border-box;
 }
+.pewter-box{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 500px;
+  background-color:#63D2FF;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+  box-sizing: border-box;
+}
+
 
 .title-container {
   position: relative;
@@ -17,23 +28,19 @@
   margin-left: -50px;
   z-index: 1;
   width: 550px;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
   
 }
 .title-container h1{
   font-size: 102px;
   font-family: 'Righteous', cursive;
-  color: black;
+  color: #E9F2F1;
   letter-spacing: 0.1em;
-  text-shadow:
-		-2px -2px 0 rgb(255, 255, 255),
-		2px -2px 0 rgb(255, 255, 255),
-		-2px 2px 0 rgb(255, 255, 255),
-    2px 2px 0 rgb(255, 255, 255);    
+    
 }
 @keyframes fadein {
   from { opacity: 0; }
@@ -50,7 +57,7 @@
   width: 144px;
 }
 svg{
-  fill: #63D2FF;
+  fill: #E9F2F1;
   width:48px;
   height:48px; 
 }
@@ -109,7 +116,13 @@ svg{
 
 .top-bio{
   position: absolute;
-  width: 60%;
   height: 500px;
   top: 90%;
+}
+.middle-images{
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 30%;
+  
 }

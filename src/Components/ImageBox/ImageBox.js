@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import "./ImageBox.css";
 class ImageBox extends Component {
   render() {
-    console.log(this.props.imageUrl);
+    let imageBoxClass = "image-box-container";
+    if (this.props.type === "middle") {
+      imageBoxClass = "image-box-container-regular";
+    }
     return (
-      <div className="image-box-container">
+      <div className={imageBoxClass}>
         <img
           className="image-properties"
           alt="not found"
