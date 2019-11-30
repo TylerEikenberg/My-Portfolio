@@ -46,6 +46,14 @@ class App extends Component {
             <ImageBox image={placeholder2} type="middle" />
           </div>
         </div>
+        <div
+          className="box-beige"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-once="true"
+        ></div>
       </div>
     );
   }

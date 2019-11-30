@@ -12,6 +12,15 @@
   background-color:#63D2FF;
   clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
   box-sizing: border-box;
+  animation: box-drop 5s;
+}
+@keyframes box-drop {
+  0% {
+    height: 50px;
+  }
+  100% {
+    height: 500px;
+  }
 }
 
 
@@ -134,4 +143,16 @@ svg{
   position: absolute;
   top: 30%;
   
+}
+
+.box-beige{
+  background-color: #C6AE82;
+  position: absolute;
+  top: 150%;
+  left: 0px;
+  width: 100%;
+  height: 1500px;
+  background-color:#C6AE82;
+  clip-path: polygon(0 0, 100% 10%, 100% 92%, 0 54%);
+  box-sizing: border-box;
 }
