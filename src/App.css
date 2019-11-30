@@ -10,7 +10,7 @@
   margin-top: -50px;
   margin-left: -50px;
   z-index: 1;
-  width: 50px;
+  width: 550px;
   
 }
 .title-container h1{
@@ -19,10 +19,40 @@
   color: black;
   letter-spacing: 0.1em;
 }
-.name-container{
-  /* border: 2px solid black; */
+
+
+.click-icons-container{
+  top: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  width: 144px;
+}
+svg{
+  fill: #63D2FF;
+  width:48px;
+  height:48px; 
+}
+svg:hover{
+  animation: svganimation 0.5s;
+  animation-fill-mode: forwards; 
+  
+}
+@keyframes svganimation {
+  0% {
+    width:48px;
+    height:48px; 
+  }
+  100% {
+    width:56px;
+    height:56px; 
+  }
 }
 
+.name-container{
+  border: 2px solid black;
+}
 .subname-container{
   top: 75%;
   /* border: 2px solid black; */
