@@ -4,12 +4,17 @@ import "aos/dist/aos.css";
 import "./App.css";
 import ImageBox from "./Components/ImageBox/ImageBox";
 import placeholder from "./Assets/placeholder.jpg";
+import TextBox from "./Components/TextBox/TextBox";
 AOS.init();
+
+const topBio =
+  "Hi! My name is Tyler Eikenberg and I'm a full-stack web developer and software engineer.";
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="page-container">
+        <div className="pewter-box"></div>
         <div className="title-container">
           <div className="name-container">
             <div className="click-icons-container">
@@ -28,6 +33,9 @@ class App extends Component {
         </div>
         <div className="title-image-container">
           <ImageBox image={placeholder} />
+        </div>
+        <div className="top-bio">
+          <TextBox textContent={topBio} />
         </div>
       </div>
     );
