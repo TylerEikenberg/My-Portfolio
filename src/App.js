@@ -58,7 +58,7 @@ class App extends Component {
           <div className="project-header-title">
             <h1>projects</h1>
             <div className="projects-container">
-              <Project />
+              <Project galaxy="true" />
             </div>
           </div>
         </div>

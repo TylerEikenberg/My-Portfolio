@@ -15,14 +15,10 @@
 .project-box-container img{
     width: 100%;
     height: 100%;
-    -webkit-box-shadow: 14px 15px 25px -22px rgba(0,0,0,0.82);
--moz-box-shadow: 14px 15px 25px -22px rgba(0,0,0,0.82);
-box-shadow: 14px 15px 25px -22px rgba(0,0,0,0.82);
-filter: saturate(30%);
-transition: 0.5s ease-in;
 }
 .project-box-container img:hover{
-    filter: saturate(100%);
+    width: 105%;
+    height: 105%;
 }
 .project-box-overlay{
     z-index: 1;
@@ -31,4 +27,7 @@ transition: 0.5s ease-in;
     position: absolute;
     height: 100%;
     width: 100%;
+}
+.hidden{
+    background: rgba(200, 194, 174, 0);
 }
