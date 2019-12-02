@@ -57,10 +57,12 @@ class App extends Component {
         >
           <div className="project-header-title">
             <h1>projects</h1>
-            <div className="projects-container">
-              <Project galaxy="true" />
-            </div>
           </div>
+        </div>
+        <div className="projects-container">
+          <Project galaxy="true" />
+          <Project delicious="true" />
+          <Project delicious="true" />
         </div>
       </div>
     );

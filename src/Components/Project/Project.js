@@ -38,6 +38,19 @@ class Project extends Component {
         </div>
       );
     }
+    if (this.props.delicious) {
+      return (
+        <div className="project-box-container">
+          <div
+            className={overlayClasses}
+            onMouseEnter={this.isMouseEnter}
+            onMouseLeave={this.onMouseLeave}
+          ></div>
+          <h1>DeliCious</h1>
+          <img src={phi} alt="whoops"></img>
+        </div>
+      );
+    }
   }
 }
 
