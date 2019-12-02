@@ -174,4 +174,5 @@ svg{
 .projects-container{
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 200px;
 }

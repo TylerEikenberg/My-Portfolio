@@ -6,6 +6,7 @@ class Project extends Component {
   render() {
     return (
       <div className="project-box-container">
+        <div className="project-box-overlay"></div>
         <h1>Project name</h1>
         <img src={phi} alt="whoops"></img>
       </div>

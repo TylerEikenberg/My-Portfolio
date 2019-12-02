@@ -5,6 +5,7 @@
     clip-path: polygon(50% 0%, 100% 0, 100% 85%, 82% 100%, 0 100%, 0 0);
 }
 .project-box-container h1{
+    z-index: 1;
     position: absolute;
     color:#E9F2F1;
     text-decoration: none;
@@ -17,4 +18,17 @@
     -webkit-box-shadow: 14px 15px 25px -22px rgba(0,0,0,0.82);
 -moz-box-shadow: 14px 15px 25px -22px rgba(0,0,0,0.82);
 box-shadow: 14px 15px 25px -22px rgba(0,0,0,0.82);
+filter: saturate(30%);
+transition: 0.5s ease-in;
+}
+.project-box-container img:hover{
+    filter: saturate(100%);
+}
+.project-box-overlay{
+    z-index: 1;
+    background: rgb(200,194,174);
+    background: linear-gradient(0deg, rgba(200, 194, 174, 0.632) 28%, rgba(99, 211, 255, 0.687) 79%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
