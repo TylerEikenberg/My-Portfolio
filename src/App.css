@@ -12,7 +12,7 @@
   background-color:#63D2FF;
   clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
   box-sizing: border-box;
-  animation: box-drop 5s;
+  animation: box-drop 2.5s ease-in-out;
 }
 @keyframes box-drop {
   0% {
@@ -155,4 +155,23 @@ svg{
   background-color:#C6AE82;
   clip-path: polygon(0 0, 100% 10%, 100% 92%, 0 54%);
   box-sizing: border-box;
+}
+
+.project-header-title{
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  margin-top: -50px;
+  margin-left: -50px;
+  z-index: 1;
+}
+.project-header-title h1{
+  font-size: 102px;
+  color: #6A8E7F;
+  text-decoration: underline;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
 }

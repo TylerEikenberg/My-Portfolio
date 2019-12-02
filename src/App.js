@@ -6,6 +6,7 @@ import ImageBox from "./Components/ImageBox/ImageBox";
 import placeholder from "./Assets/placeholder.jpg";
 import placeholder2 from "./Assets/placeholder2.jpg";
 import TextBox from "./Components/TextBox/TextBox";
+import Project from "./Components/Project/Project";
 AOS.init();
 
 class App extends Component {
@@ -53,7 +54,14 @@ class App extends Component {
           data-aos-duration="1000"
           data-aos-easing="ease-in"
           data-aos-once="true"
-        ></div>
+        >
+          <div className="project-header-title">
+            <h1>projects</h1>
+            <div className="projects-container">
+              <Project />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
