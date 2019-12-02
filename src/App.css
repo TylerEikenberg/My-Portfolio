@@ -174,7 +174,7 @@ svg{
 .projects-container{
   position: absolute;
   top: 190%;
-  left: 30%;
+  left: 35%;
   z-index: 500;
   display: flex;
   flex-direction: column;
