@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Project.css";
-import phi from "../../Assets/placeholder.jpg";
+import galaxydawg from "../../Assets/galaxydawg.jpg";
 
 class Project extends Component {
   constructor() {
@@ -37,13 +37,17 @@ class Project extends Component {
             onMouseLeave={this.onMouseLeave}
           ></div>
           <h1 className={hidethis}>Galaxy Dawg</h1>
-          <h4>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            provident iste libero sunt quae explicabo corporis magni accusantium
-            amet natus nulla culpa tempore, quisquam atque voluptates,
-            architecto omnis tempora ab.
-          </h4>
-          <img src={phi} alt="whoops"></img>
+          {this.state.hover ? (
+            <h4>
+              Galaxy Dawg is a top down shoot-em-up style single player game
+              playable on desktop and mobile devices. Inspired by classic games
+              like "Space Invaders" and "Raiden"; Galaxy Dawg allows you to play
+              as ace space pilot "Commander Pup" in his mission to protect his
+              home planet from alien invaders.
+            </h4>
+          ) : null}
+
+          <img src={galaxydawg} alt="whoops"></img>
         </div>
       );
     }
@@ -56,7 +60,7 @@ class Project extends Component {
             onMouseLeave={this.onMouseLeave}
           ></div>
           <h1>DeliCious</h1>
-          <img src={phi} alt="whoops"></img>
+          <img src={galaxydawg} alt="whoops"></img>
         </div>
       );
     }
@@ -64,3 +68,5 @@ class Project extends Component {
 }
 
 export default Project;
+
+// create animated gif cartoon of me that leads to contact opens contact page
