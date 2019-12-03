@@ -3,6 +3,33 @@
     height: 400px;
     width: 900px;
     clip-path: polygon(50% 0%, 100% 0, 100% 85%, 82% 100%, 0 100%, 0 0);
+    background-image: url(../../Assets/galaxydawg.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    transition: transform 0.5s, background-size 0.5s
+}
+.project-box-container:hover{
+    transform: scale(1.02);
+    background-size: 102%;
+}
+.project-box-overlay{
+    z-index: 1;
+    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 0%, rgba(99, 211, 255, 0.767) 100%), url(../../Assets/galaxydawg.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten; 
+    transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.project-box-overlay:hover{
+    opacity: 0;
 }
 .show-title{
     z-index: 1;
@@ -28,16 +55,11 @@
     width: 105%;
     height: 105%;
 }
-.project-box-overlay{
-    z-index: 1;
-    background: rgb(200,194,174);
-    background: linear-gradient(0deg, rgba(200, 194, 174, 0.632) 28%, rgba(99, 211, 255, 0.687) 79%);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-.hidden{
-    background: rgba(200, 194, 174, 0);
+
+
+@keyframes hideoverlay{
+    0% {background: linear-gradient(0deg, rgba(200, 194, 174, 0.705) 28%, rgba(99, 211, 255, 0.767) 79%);}
+    100% {background: linear-gradient(0deg, rgba(200, 194, 174, 0) 28%, rgba(99, 211, 255, 0) 79%);}
 }
 
 

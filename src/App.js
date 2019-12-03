@@ -61,8 +61,8 @@ class App extends Component {
         </div>
         <div className="projects-container">
           <Project galaxy="true" />
-          <Project delicious="true" />
-          <Project delicious="true" />
+          {/* <Project delicious="true" />
+          <Project delicious="true" /> */}
         </div>
       </div>
     );

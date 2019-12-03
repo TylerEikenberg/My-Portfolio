@@ -31,11 +31,7 @@ class Project extends Component {
     if (this.props.galaxy) {
       return (
         <div className="project-box-container">
-          <div
-            className={overlayClasses}
-            onMouseEnter={this.isMouseEnter}
-            onMouseLeave={this.onMouseLeave}
-          ></div>
+          <div className="project-box-overlay"></div>
           <h1 className={hidethis}>Galaxy Dawg</h1>
           {this.state.hover ? (
             <h4>
@@ -46,8 +42,6 @@ class Project extends Component {
               home planet from alien invaders.
             </h4>
           ) : null}
-
-          <img src={galaxydawg} alt="whoops"></img>
         </div>
       );
     }
