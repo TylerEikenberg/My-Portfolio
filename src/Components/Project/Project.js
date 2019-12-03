@@ -27,7 +27,14 @@ class Project extends Component {
     }
     if (this.props.galaxy) {
       return (
-        <div className="project-container">
+        <div
+          className="project-container"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
           <div className="project-box-container galaxy">
             <div
               className="project-box-overlay galaxy-overlay"
@@ -50,7 +57,14 @@ class Project extends Component {
     }
     if (this.props.delicious) {
       return (
-        <div className="project-container">
+        <div
+          className="project-container"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
           <div className="project-box-container delicious">
             <div
               className="project-box-overlay delicious-overlay"
@@ -66,6 +80,36 @@ class Project extends Component {
               classic games like "Space Invaders" and "Raiden"; Galaxy Dawg
               allows you to play as ace space pilot "Commander Pup" in his
               mission to protect his home planet from alien invaders.
+            </h4>
+          </div>
+        </div>
+      );
+    }
+    if (this.props.ghibli) {
+      return (
+        <div
+          className="project-container"
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
+          <div className="project-box-container ghibli">
+            <div
+              className="project-box-overlay ghibli-overlay"
+              onMouseEnter={this.isMouseEnter}
+              onMouseLeave={this.onMouseLeave}
+            ></div>
+            <h1 className={hidethis}>Studio Ghibli Database</h1>
+          </div>
+          <div className="about-project-container">
+            <h4 className="about-span">
+              <span>Studio Ghibli Database</span> is a top down shoot-em-up
+              style single player game playable on desktop and mobile devices.
+              Inspired by classic games like "Space Invaders" and "Raiden";
+              Galaxy Dawg allows you to play as ace space pilot "Commander Pup"
+              in his mission to protect his home planet from alien invaders.
             </h4>
           </div>
         </div>

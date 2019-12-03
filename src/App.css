@@ -178,7 +178,7 @@ svg{
   z-index: 500;
   display: flex;
   flex-direction: column;
-  height: 120%;
+  height: 130%;
   justify-content: space-between;
   
 }

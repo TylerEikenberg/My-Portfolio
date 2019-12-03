@@ -74,7 +74,7 @@
     background-size: 100%;
 }
 .galaxy-overlay{
-    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 0%, rgba(99, 211, 255, 0.767) 100%), url(../../Assets/galaxydawg.jpg);
+    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 50%, rgba(99, 211, 255, 0.913) 100%), url(../../Assets/galaxydawg.jpg);
 }
 .delicious{
     background-image: url(../../Assets/delicious.jpg);
@@ -82,5 +82,13 @@
     background-size: 100%;
 }
 .delicious-overlay{
-    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 0%, rgba(99, 211, 255, 0.767) 100%), url(../../Assets/delicious.jpg);
+    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 50%, rgba(99, 211, 255, 0.913) 100%), url(../../Assets/delicious.jpg);
+}
+.ghibli{
+    background-image: url(../../Assets/ghibli.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.ghibli-overlay{
+    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 50%, rgba(99, 211, 255, 0.913) 100%), url(../../Assets/ghibli.jpg);
 }

@@ -62,6 +62,7 @@ class App extends Component {
         <div className="projects-container">
           <Project galaxy="true" />
           <Project delicious="true" />
+          <Project ghibli="true" />
         </div>
       </div>
     );
