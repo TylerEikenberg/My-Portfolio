@@ -22,18 +22,22 @@ class Project extends Component {
   //FIGURE OUT HOW TO MAKE IMAGE GROW SLIGHTLY ON HOVER
   //on hover hide name, show description and button linkss
   render() {
-    let overlayClasses = "project-box-overlay hidden";
     let hidethis = "hidden-words";
     if (!this.state.hover) {
-      overlayClasses = "project-box-overlay";
       hidethis = "show-title";
     }
     if (this.props.galaxy) {
       return (
-        <div className="project-box-container galaxy">
-          <div className="project-box-overlay galaxy-overlay"></div>
-          <h1 className={hidethis}>Galaxy Dawg</h1>
-          {this.state.hover ? (
+        <div className="project-container">
+          <div className="project-box-container galaxy">
+            <div
+              className="project-box-overlay galaxy-overlay"
+              onMouseEnter={this.isMouseEnter}
+              onMouseLeave={this.onMouseLeave}
+            ></div>
+            <h1 className={hidethis}>Galaxy Dawg</h1>
+          </div>
+          <div className="about-project-container">
             <h4>
               Galaxy Dawg is a top down shoot-em-up style single player game
               playable on desktop and mobile devices. Inspired by classic games
@@ -41,7 +45,7 @@ class Project extends Component {
               as ace space pilot "Commander Pup" in his mission to protect his
               home planet from alien invaders.
             </h4>
-          ) : null}
+          </div>
         </div>
       );
     }
@@ -49,7 +53,6 @@ class Project extends Component {
       return (
         <div className="project-box-container">
           <div
-            className={overlayClasses}
             onMouseEnter={this.isMouseEnter}
             onMouseLeave={this.onMouseLeave}
           ></div>
