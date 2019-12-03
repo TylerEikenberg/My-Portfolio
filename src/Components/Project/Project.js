@@ -30,8 +30,8 @@ class Project extends Component {
     }
     if (this.props.galaxy) {
       return (
-        <div className="project-box-container">
-          <div className="project-box-overlay"></div>
+        <div className="project-box-container galaxy">
+          <div className="project-box-overlay galaxy-overlay"></div>
           <h1 className={hidethis}>Galaxy Dawg</h1>
           {this.state.hover ? (
             <h4>
