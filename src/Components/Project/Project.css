@@ -6,6 +6,11 @@
     height: 400px;
     width: 900px;
     clip-path: polygon(50% 0%, 100% 0, 100% 85%, 82% 100%, 0 100%, 0 0);
+    border-radius: .1em;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+    border-bottom-left-radius: 0.1em;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
@@ -17,6 +22,11 @@
 }
 .project-box-overlay{
     z-index: 1;
+    border-radius: .1em;
+    border-top-left-radius: 0.1em;
+    border-top-right-radius: 0.1em;
+    border-bottom-right-radius: 0.1em;
+    border-bottom-left-radius: 0.1em;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -73,8 +83,11 @@
     background-position: center;
     background-size: 100%;
 }
+
+
 .galaxy-overlay{
-    background-image: linear-gradient(30deg, rgba(200, 194, 174, 0.705) 50%, rgba(99, 211, 255, 0.913) 100%), url(../../Assets/galaxydawg.jpg);
+    /* background-color: rgb(255, 199, 87); */
+    background-image: linear-gradient(10deg, rgba(255, 199, 87, 0.742) 20%, rgb(175, 67, 25) 60%), url(../../Assets/galaxydawg.jpg);
 }
 .delicious{
     background-image: url(../../Assets/delicious.jpg);
