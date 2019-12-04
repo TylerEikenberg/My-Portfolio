@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AOS from "aos";
+import Parallax from "react-rellax";
 import "aos/dist/aos.css";
 import "./App.css";
 import ImageBox from "./Components/ImageBox/ImageBox";
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div className="page-container">
         <div className="pewter-box"></div>
-        <div className="title-container">
+        <Parallax className="title-container rellax" speed={6}>
           <div className="name-container">
             <div className="click-icons-container">
               <svg className="hvr-grow" viewBox="0 0 24 24">
@@ -29,11 +30,11 @@ class App extends Component {
           <div className="subname-container">
             <h3>Software Engineer</h3>
           </div>
-        </div>
-        <div className="title-image-container">
+        </Parallax>
+        <Parallax className="title-image-container" speed={5}>
           <ImageBox image={placeholder} />
-        </div>
-        <div className="top-bio">
+        </Parallax>
+        <Parallax speed={2} className="top-bio">
           <TextBox intro="true" />
           <div
             className="middle-images"
@@ -46,7 +47,7 @@ class App extends Component {
             <TextBox about="true" />
             <ImageBox image={placeholder2} type="middle" />
           </div>
-        </div>
+        </Parallax>
         <div
           className="box-beige"
           data-aos="fade-up"
@@ -59,11 +60,11 @@ class App extends Component {
             <h1>projects</h1>
           </div>
         </div>
-        <div className="projects-container">
+        <Parallax speed={1} className="projects-container">
           <Project galaxy="true" />
           <Project delicious="true" />
           <Project ghibli="true" />
-        </div>
+        </Parallax>
       </div>
     );
   }
