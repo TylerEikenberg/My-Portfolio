@@ -1,15 +1,19 @@
-.page-container{
+:root {
+  --blue: #63d2ff;
+}
+
+.page-container {
   margin-left: 10%;
   margin-right: 10%;
   box-sizing: border-box;
 }
-.pewter-box{
+.pewter-box {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 500px;
-  background-color:#63D2FF;
+  background-color: var(--blue);
   clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
   box-sizing: border-box;
   animation: box-drop 2.5s ease-in-out;
@@ -22,7 +26,6 @@
     height: 500px;
   }
 }
-
 
 .title-container {
   position: relative;
@@ -38,34 +41,34 @@
   z-index: 1;
   width: 550px;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-     -ms-animation: fadein 1s; /* Internet Explorer */
-      -o-animation: fadein 1s; /* Opera < 12.1 */
-         animation: fadein 1s;
-  
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
-.title-container h1{
+.title-container h1 {
   font-size: 102px;
-  font-family: 'Righteous', cursive;
-  color: #E9F2F1;
+  font-family: "Righteous", cursive;
+  color: #e9f2f1;
   letter-spacing: 0.1em;
   cursor: pointer;
-    
 }
-.title-container h1:hover{
+.title-container h1:hover {
   font-size: 102px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   color: rgba(233, 242, 241, 0.92);
   letter-spacing: 0.1em;
-    
 }
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-.click-icons-container{
+.click-icons-container {
   top: 10%;
   position: absolute;
   display: flex;
@@ -73,11 +76,11 @@
   height: 48px;
   width: 144px;
 }
-svg{
+svg {
   cursor: pointer;
-  fill: #E9F2F1;
-  width:48px;
-  height:48px; 
+  fill: #e9f2f1;
+  width: 48px;
+  height: 48px;
 }
 .hvr-grow {
   display: inline-block;
@@ -95,12 +98,12 @@ svg{
 .hvr-grow:active {
   transform: scale(1.1);
 }
-.subname-container{
+.subname-container {
   top: 75%;
   /* border: 2px solid black; */
   position: absolute;
 }
-.title-container h3{
+.title-container h3 {
   font-size: 26px;
   font-family: monospace;
   animation: type 2.5s steps(20);
@@ -118,35 +121,33 @@ svg{
   }
 }
 
-.title-image-container{
+.title-image-container {
   position: absolute;
   top: 25%;
   left: 30%;
   margin-top: -50px;
   margin-left: -50px;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
-
-.top-bio{
+.top-bio {
   position: absolute;
   height: 500px;
   top: 90%;
 }
-.middle-images{
+.middle-images {
   display: flex;
   flex-direction: row-reverse;
   position: absolute;
   top: 30%;
-  
 }
 
-.box-beige{
-  background-color: #6E1639;
+.box-beige {
+  background-color: var(--blue);
   position: absolute;
   top: 150%;
   left: 0px;
@@ -156,7 +157,7 @@ svg{
   box-sizing: border-box;
 }
 
-.project-header-title{
+.project-header-title {
   position: absolute;
   top: 3%;
   left: 25%;
@@ -164,13 +165,13 @@ svg{
   margin-left: -50px;
   z-index: 1;
 }
-.project-header-title h1{
+.project-header-title h1 {
   font-size: 102px;
   color: #fff;
   text-decoration: underline;
 }
 
-.projects-container{
+.projects-container {
   position: absolute;
   top: 180%;
   left: 35%;
@@ -179,5 +180,25 @@ svg{
   flex-direction: column;
   height: 130%;
   justify-content: space-between;
-  
+}
+
+@media only screen and (max-width: 812px) {
+  .title-container h1 {
+    font-size: 70px;
+    padding-top: 20px;
+  }
+  .title-container {
+    padding-left: 30px;
+  }
+  .pewter-box {
+    width: 100%;
+  }
+  .title-image-container {
+    top: 45%;
+    left: 13%;
+  }
+  .middle-images {
+    flex-direction: column-reverse;
+    width: 50vh;
+  }
 }
