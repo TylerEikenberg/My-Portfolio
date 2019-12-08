@@ -191,14 +191,35 @@ svg {
     padding-left: 30px;
   }
   .pewter-box {
+    clip-path: polygon(0 0, 100% 0%, 100% 66%, 0 81%);
     width: 100%;
+    height: 400px;
+  }
+  @keyframes box-drop {
+    0% {
+      height: 50px;
+    }
+    100% {
+      height: 400px;
+    }
   }
   .title-image-container {
     top: 45%;
     left: 13%;
   }
   .middle-images {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     flex-direction: column-reverse;
-    width: 50vh;
+  }
+  .top-bio {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 50%;
+    right: 10%;
   }
 }

@@ -22,8 +22,11 @@
     clip-path: circle(50% at 50% 50%);
   }
   .image-box-container-regular {
-    width: 400px;
-    height: 300px;
+    position: absolute;
+    clip-path: circle(50% at 50% 50%);
+    width: 300px;
+    height: 200px;
+    top: 2%;
   }
   .image-box-container {
     left: 0;

@@ -32,7 +32,7 @@ class App extends Component {
           </div>
         </Parallax>
         <Parallax className="title-image-container" speed={5}>
-          <ImageBox image={placeholder} />
+          {/* <ImageBox image={placeholder} /> */}
         </Parallax>
         <Parallax speed={2} className="top-bio">
           <TextBox intro="true" />
